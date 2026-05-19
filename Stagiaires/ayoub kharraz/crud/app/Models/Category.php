@@ -30,7 +30,9 @@ class Category extends Model
             if (empty($category->slug)) {
                 $category->slug = Str::slug($category->name);
             }
-        });
+
+            
+        }); 
     }
 }
 
